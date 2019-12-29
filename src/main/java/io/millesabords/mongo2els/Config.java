@@ -18,6 +18,8 @@ public class Config extends Properties {
     public static final String MONGO_HOST = "mongo.host";
     public static final String MONGO_PORT = "mongo.port";
     public static final String MONGO_DB = "mongo.db";
+    public static final String MONGO_USER = "mongo.user";
+    public static final String MONGO_PASSWORD = "mongo.password";
     public static final String MONGO_COLLECTION = "mongo.collection";
     public static final String MONGO_QUERY = "mongo.query";
     public static final String MONGO_PROJECTION = "mongo.projection";
@@ -43,6 +45,9 @@ public class Config extends Properties {
         put(MONGO_COLLECTION, "test");
         put(MONGO_QUERY, "{}");
         put(MONGO_BATCH_SIZE, "20");
+        put(MONGO_USER, "");
+        put(MONGO_PASSWORD, "");
+
 
         put(ELS_HOST, "localhost");
         put(ELS_PORT, "9300");
