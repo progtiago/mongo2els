@@ -73,7 +73,7 @@ public class Mongo2Els {
         final Config cfg = Config.get();
         mongoClient =
                 new MongoClient(
-                        new ServerAddress("35.247.238.219", 27017),
+                        new ServerAddress("localhost", 27017),
                         Arrays.asList(
                                 MongoCredential.createCredential("rw", "orders", "chapolin@30".toCharArray())));
         mongoClient.getServerAddressList(); // To check that the connection is ok
